@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    xmlns:android="http://schemas.android.com/apk/res-auto"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/close_confirmation_popup"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_close_white_24dp"
+        android:background="@drawable/close_button_circle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:elevation="5dp"
+        android:onClick="dismissConfirmationPopUp"/>
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:id="@+id/confirmation_text"
+                    android:layout_width="274dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/are_you_sure"
+                    android:textAlignment="center"
+                    android:textColor="#555"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/confirm_submission_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/highlighted_button"
+                    android:text="@string/yes_accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/pluralsight_orange"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/confirmation_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
