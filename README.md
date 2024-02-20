@@ -1,5 +1,12 @@
-# LeaderBoard
-A practice android application for **Google Africa Developer Scholarship (GADS)** showing the leader board for top learners in the program
+# LeaderBoard 🥇
+A practice android application for **Google Africa Developer Scholarship (GADS)** showing the leaderboard for top learners in the program.
+
+This project uses:
+- Java
+- Android Studio
+- SQLite (Database)
+
+## Application Screenshots 📱
 
 <p align="center">
   <img align="left" width="300" height="600" src="https://user-images.githubusercontent.com/51927657/92480552-b8e85b00-f1ed-11ea-97af-7f104a8c01ef.jpeg">
